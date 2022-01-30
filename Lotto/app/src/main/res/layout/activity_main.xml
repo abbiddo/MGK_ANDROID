@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/floatingActionButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/buttonNum1"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:backgroundTint="#F8BBD0"
+                android:gravity="center"
+                android:text=""
+                app:cornerRadius="80dp" />
+
+            <Button
+                android:id="@+id/buttonNum2"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:backgroundTint="#FFCCBC"
+                android:gravity="center"
+                android:text=""
+                app:cornerRadius="80dp" />
+
+            <Button
+                android:id="@+id/buttonNum3"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:backgroundTint="#FFF9C4"
+                android:gravity="center"
+                android:text=""
+                app:cornerRadius="80dp" />
+
+            <Button
+                android:id="@+id/buttonNum4"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:backgroundTint="#DCEDC8"
+                android:gravity="center"
+                android:text=""
+                app:cornerRadius="80dp" />
+
+            <Button
+                android:id="@+id/buttonNum5"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:backgroundTint="#B2EBF2"
+                android:gravity="center"
+                android:text=""
+                app:cornerRadius="80dp" />
+
+            <Button
+                android:id="@+id/buttonNum6"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:backgroundTint="#E1BEE7"
+                android:gravity="center"
+                android:text=""
+                app:cornerRadius="80dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
